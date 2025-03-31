@@ -16,3 +16,6 @@ export function App() {
         </>
     )
 }
+
+
+https://www.youtube.com/watch?v=7iobxzd_2wY&t=3000s me quede en el 1:20:01
