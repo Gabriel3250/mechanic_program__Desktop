@@ -1,5 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import '../pages/Styles/LoginStyle.css'
 
 function Login({ setIsLoggedIn }) {
     const [user, setUser] = useState('')
@@ -19,8 +20,8 @@ function Login({ setIsLoggedIn }) {
 
     return (
         <div>
-            <h2>Login</h2>
-            <form onSubmit={handleSubmit}>
+            <form className='formLogin' onSubmit={handleSubmit}>
+                <h2>Login</h2>
                 <input
                     type="text"
                     placeholder="Usuario"
