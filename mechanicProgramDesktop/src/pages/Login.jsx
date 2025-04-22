@@ -10,12 +10,17 @@ function Login({ setIsLoggedIn }) {
     const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (user === 'admin' && password === '1234') {
+        if (user === '' && password === '') {
             setIsLoggedIn(true)
             navigate('/home')
         } else {
             alert('Usuario o contraseña incorrecta')
         }
+    }
+
+    const handleClear = () => {
+        setUser('')
+        setPassword('')
     }
 
     return (
@@ -38,7 +43,7 @@ function Login({ setIsLoggedIn }) {
                 />
                 <div className='buttonContainer'>
                     <button type="submit" className='enterBtn'>Iniciar Sesión</button>
-                    <button type="submit" className='clearBtn'>Limpiar</button>
+                    <button type="button" className='clearBtn' onClick={handleClear}>Limpiar</button>
                 </div>
             </form>
         </div>
