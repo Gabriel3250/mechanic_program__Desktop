@@ -24,7 +24,7 @@ function Login({ setIsLoggedIn }) {
     }
 
     return (
-        <div>
+        <div className="formWrapper">
             <form className='formLogin' onSubmit={handleSubmit}>
                 <h2>Login</h2>
                 <input
