@@ -1,6 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-import { Login } from './pages/Login';
-import { Home } from './pages/Home';
+import Login from './pages/Login';
+import Home from './pages/Home';
 import { useState } from 'react';
 
 function App() {
@@ -14,4 +14,5 @@ function App() {
     </Routes>
   )
 }
+
 export default App;
