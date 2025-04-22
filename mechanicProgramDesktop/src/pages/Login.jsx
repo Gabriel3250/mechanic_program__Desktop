@@ -36,7 +36,10 @@ function Login({ setIsLoggedIn }) {
                     onChange={(e) => setPassword(e.target.value)}
                     className='passwordInput'
                 />
-                <button type="submit" className='enterBtn'>Entrar</button>
+                <div className='buttonContainer'>
+                    <button type="submit" className='enterBtn'>Iniciar Sesión</button>
+                    <button type="submit" className='clearBtn'>Limpiar</button>
+                </div>
             </form>
         </div>
     )
