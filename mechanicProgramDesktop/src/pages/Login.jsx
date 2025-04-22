@@ -26,14 +26,16 @@ function Login({ setIsLoggedIn }) {
                     placeholder="Usuario"
                     value={user}
                     onChange={(e) => setUser(e.target.value)}
+                    className='userInput'
                 />
                 <input
                     type="password"
                     placeholder="Contraseña"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
+                    className='passwordInput'
                 />
-                <button type="submit">Entrar</button>
+                <button type="submit" className='enterBtn'>Entrar</button>
             </form>
         </div>
     )
